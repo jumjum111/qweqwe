@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>상품 주문서</h1>
+    <form>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="name">주문자 이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="tel">전화번호</label>
+                    <input type="text" id="tel" placeholder="번호만 입력">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    <label for="op">배송 옵션</label>
+                    <label><input type="radio" name="sub" value="place">기존 배송지</label>
+                    <label><input type="radio" name="sub" value="new">새 배송지</label>
+                </li>
+                <li>
+                    <label for="adr">주소</label>
+                    <input type="text" id="adr">
+                </li>
+                <li>
+                    <label for="req">요청사항</label>
+                    <select id="req">
+                        <option value="sel">요청사항을 선택하세요.</option>
+                        <option value="alr">배송 전에 미리 연락 바랍니다</option>
+                        <option value="sec">부재시 경비실에 맡겨주세요</option>
+                        <option value="mes">부재시 전화 주시거나 문자 남겨주세요</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>주문 정보</legend>
+            상품 <br>
+            
+            <label><input type="checkbox">방울토마토1kg <del>10,000원</del>8,000원 <input type="text">박스</label><br>
+            <label><input type="checkbox">방울토마토2kg <del>20,000원</del>16,000원 <input type="text">박스</label><br>
+            <label><input type="checkbox">방울토마토3kg <del>30,000원</del>24,000원 <input type="text">박스</label><br>
+            <label for="git">기타사항</label>
+            <input type="textarea" id="git" size="30">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>결제 수단</legend>
+            <ul>
+                <li>
+                    <label><input type="radio">계좌 이체</label>
+                </li>
+                <li>
+                    <label><input type="radio">카드 결제</label>
+                </li>
+                <li>
+                    <label><input type="radio">일반 결제</label>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+
+    <input type="reset" value="초기화">
+    <input type="submit" value="결제하기">
+</body>
+</html>
